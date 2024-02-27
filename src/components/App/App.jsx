@@ -13,7 +13,7 @@ function App() {
   console.log('sdfdsdfds');
 
   return (
-    <div>
+    <>
       <Header theme="ligth" />
       {isLoad ? (
         <Preloader type="page" />
@@ -26,9 +26,8 @@ function App() {
           theme="ligth"
         />
       )}
-
-      <Footer theme="ligth" />
-    </div>
+      {/* <Footer theme="ligth" /> */}
+    </>
   );
 }
 
