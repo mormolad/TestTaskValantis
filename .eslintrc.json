@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "disableEslintIgnore": 0,
+    "object-curly-newline": "off",
+    "no-else-return": "off",
+    "prefer-promise-reject-errors": "off",
+    "comma-dangle": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "extends": ["airbnb-base", "plugin:react/recommended"],
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".json"]
+  }
+}
